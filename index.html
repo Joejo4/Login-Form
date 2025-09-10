@@ -7,33 +7,41 @@
     <title>Form</title>
   </head>
   <body>
-    <form action="#">
-      <div class="title">
-        <h1>Welcome Back!</h1>
-        <p>To get started,create your account</p>
-      </div>
-      <div class="input">
-        <input
-          type="text"
-          value="Full Name"
-          placeholder="Enter Full Name"
-          required
-        />
-      </div>
-      <div class="input">
-        <input type="email" value="Email*" placeholder="Enter Email" required />
-      </div>
-      <div class="input">
-        <input
-          type="password"
-          value=" Password"
-          placeholder="Enter password"
-          required
-        />
-      </div>
-      <div class="input button">
-        <input type="submit" value="Create account" />
-      </div>
-    </form>
+    <div class="container">
+      <form action="#" class="form">
+        <div class="title">
+          <h1>Welcome Back!</h1>
+          <p>To get started,create your account</p>
+        </div>
+        <div class="input">
+          <label for="Fname"><b>Full Name</b></label>
+
+          <input
+            type="text"
+            placeholder="Enter Full Name"
+            name="Fname"
+            required
+          />
+        </div>
+
+        <div class="input">
+          <label for="email"><b>Email</b></label>
+
+          <input type="email" placeholder="Enter Email" name="email" required />
+        </div>
+        <div class="input">
+          <label for="psw"><b>Password</b></label>
+
+          <input
+            type="password"
+            placeholder="Enter password"
+            name="psw"
+            required
+          />
+        </div>
+
+        <input class="input-btn" type="submit" value="Create account" />
+      </form>
+    </div>
   </body>
 </html>
